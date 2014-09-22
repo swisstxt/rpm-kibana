@@ -10,6 +10,8 @@ License:        commercial
 URL:            http://www.elasticsearch.org/overview/kibana/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
+Source0:        https://download.elasticsearch.org/kibana/kibana/kibana-%{VERSION}.tar.gz
+
 %description
 Kibana - UI for elasticsearch
 
