@@ -10,7 +10,7 @@ License:        commercial
 URL:            http://www.elasticsearch.org/overview/kibana/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-Source0:        https://download.elasticsearch.org/kibana/kibana/kibana-%{VERSION}.tar.gz
+Source0:        https://download.elasticsearch.org/kibana/kibana/kibana-%{ver}.tar.gz
 
 %description
 Kibana - UI for elasticsearch
@@ -23,7 +23,7 @@ Kibana - UI for elasticsearch
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/opt/kibana/
-cp * $RPM_BUILD_ROOT/opt/kibana/
+cp -r * $RPM_BUILD_ROOT/opt/kibana/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
