@@ -10,7 +10,7 @@ clean:
 	mkdir -p ./SPECS ./SOURCES
 
 download-upstream:
-	./download kibana-${VERSION}.tar.gz https://download.elasticsearch.org/kibana/kibana/kibana-%{version}.tar.gz
+	./download kibana-${VERSION}.tar.gz https://download.elasticsearch.org/kibana/kibana/kibana-${VERSION}.tar.gz
 
 build: clean download-upstream
 	cp -r ./SPECS/* ./rpmbuild/SPECS/ || true
