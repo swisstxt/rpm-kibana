@@ -2,7 +2,7 @@
 
 Name:           kibana
 Version:        %{ver}
-Release:        %{rel}1%{?dist}
+Release:        %{rel}%{?dist}
 Summary:        Kibana - UI for elasticsearch
 BuildArch:      noarch
 Group:          Application/Internet
