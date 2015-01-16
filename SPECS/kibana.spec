@@ -1,6 +1,4 @@
-%global service_name kibana
-
-Name:           kibana
+Name:           %{name}
 Version:        %{ver}
 Release:        %{rel}%{?dist}
 Summary:        Kibana - UI for elasticsearch
@@ -34,5 +32,8 @@ rm -rf $RPM_BUILD_ROOT
 %config /opt/kibana/config.js
 
 %changelog
+* Fri Jan 16 2015 Daniel Menet <daniel.menet@swisstxt.ch> - 3.1.2
+Updated to Kibana 3.1.2
+
 * Mon Sep 22 2014 Daniel Menet <daniel.menet@swisstxt.ch> - 1-1
 Initial creation
