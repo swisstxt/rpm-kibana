@@ -2,7 +2,7 @@ Name:           %{name}
 Version:        %{ver}
 Release:        %{rel}%{?dist}
 Summary:        Kibana - UI for elasticsearch
-BuildArch:      noarch
+BuildArch:      %{arch}
 Group:          Application/Internet
 License:        commercial
 URL:            http://www.elasticsearch.org/overview/kibana/
