@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %attr(0755,root,root) /opt/kibana/*
 %attr(0755,root,root) %{systemd_dest}/kibana.service
-%config /opt/kibana/config.js
+%config /opt/kibana/config/kibana.yml
 
 %changelog
 * Wed Apr 01 2015 Daniel Menet <daniel.menet@swisstxt.ch> - 4.0.1
