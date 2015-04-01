@@ -18,6 +18,7 @@ Kibana - UI for elasticsearch
 
 %prep
 %setup -q -n %{name}-%{version}-linux-x64
+cp -p %SOURCE1 .
 
 %build
 

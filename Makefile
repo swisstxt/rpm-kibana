@@ -15,7 +15,7 @@ clean:
 	mkdir -p ./SPECS ./SOURCES
 
 getsources:
-	wget  -P ./SOURCES/ -q https://download.elasticsearch.org/kibana/kibana/kibana-${VERSION}-linux-x64.tar.gz
+	wget -P ./SOURCES/ -q https://download.elasticsearch.org/kibana/kibana/kibana-${VERSION}-linux-x64.tar.gz
 
 build: clean getsources
 	cp -r ./SPECS/* ./rpmbuild/SPECS/ || true
