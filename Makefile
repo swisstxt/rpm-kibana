@@ -10,7 +10,7 @@ all: build
 
 clean:
 	rm -rf ./rpmbuild
-	rm -rf ./SOURCES
+	rm -rf ./SOURCES/kibana-*
 	mkdir -p ./rpmbuild/SPECS/ ./rpmbuild/SOURCES/
 	mkdir -p ./SPECS ./SOURCES
 
