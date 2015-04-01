@@ -1,0 +1,13 @@
+[Unit]
+Description=Kibana
+After=syslog.target
+
+[Service]
+WorkingDirectory=/opt/kibana
+ExecStart=/opt/kibana/bin/kibana
+Restart=on-failure
+StandardError=null
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
