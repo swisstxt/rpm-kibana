@@ -17,7 +17,7 @@ Source1:        kibana.service
 Kibana - UI for elasticsearch
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{version}-linux-x64
 
 %build
 
