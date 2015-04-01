@@ -8,7 +8,7 @@ License:        commercial
 URL:            http://www.elasticsearch.org/overview/kibana/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-Source0:        https://download.elasticsearch.org/kibana/kibana/kibana-%{ver}.tar.gz
+Source0:        https://download.elasticsearch.org/kibana/kibana/kibana-%{ver}-linux-x64.tar.gz
 Source1:        kibana.service
 
 %define appdir /opt/%{name}

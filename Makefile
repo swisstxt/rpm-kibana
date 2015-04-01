@@ -1,5 +1,5 @@
 HOME=$(shell pwd)
-VERSION="4.0.1"
+VERSION=4.0.1
 RELEASE=$(shell /opt/buildhelper/buildhelper getgitrev .)
 NAME=kibana
 SPEC=$(shell /opt/buildhelper/buildhelper getspec ${NAME})
