@@ -13,6 +13,8 @@ Source1:        kibana.service
 
 %define appdir /opt/%{name}
 %define systemd_dest /usr/lib/systemd/system/
+%define debug_package %{nil}
+
 %description
 Kibana - UI for elasticsearch
 
