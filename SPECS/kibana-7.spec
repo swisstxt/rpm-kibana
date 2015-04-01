@@ -26,7 +26,7 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/opt/kibana/
 mkdir -p $RPM_BUILD_ROOT/%{systemd_dest}
 cp -r * $RPM_BUILD_ROOT/opt/kibana/
-%{__install} -p -m 0755 %{SOURCE1} $RPM_BUILD_ROOT/%{systemd_dest}/logstash-forwarder.service
+%{__install} -p -m 0755 %{SOURCE1} $RPM_BUILD_ROOT/%{systemd_dest}/kibana.service
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %attr(0755,root,root) /opt/kibana/*
-%attr(0755,root,root) %{systemd_dest}/logstash-forwarder.service
+%attr(0755,root,root) %{systemd_dest}/kibana.service
 %config /opt/kibana/config.js
 
 %changelog
