@@ -1,5 +1,5 @@
 HOME=$(shell pwd)
-VERSION=4.0.1
+VERSION=4.0.2
 RELEASE=$(shell /opt/buildhelper/buildhelper getgitrev .)
 NAME=kibana
 SPEC=$(shell /opt/buildhelper/buildhelper getspec ${NAME})
@@ -15,7 +15,7 @@ clean:
 	mkdir -p ./SPECS ./SOURCES
 
 getsources:
-	wget -P ./SOURCES/ -q https://download.elasticsearch.org/kibana/kibana/kibana-${VERSION}-linux-x64.tar.gz
+	wget -P ./SOURCES/ -q https://download.elastic.co/kibana/kibana/kibana-${VERSION}-linux-x64.tar.gz
 
 build: clean getsources
 	cp -r ./SPECS/* ./rpmbuild/SPECS/ || true
